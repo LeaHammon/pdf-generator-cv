@@ -9,3 +9,6 @@ then go to: http://localhost:3000/pdf
 - Data are stored in json file in /src/data/data.json
 - Inject data in ejs template to generate a HTML in /src/pdf/pdfService.js
 - Use puppeteer to transform HTML into PDF in /src/pdf/pdfService.js
+
+### Result
+You can see the result in generated-pdf.pdf
