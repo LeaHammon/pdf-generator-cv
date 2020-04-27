@@ -1,0 +1,25 @@
+<div class="grey-background content">
+	<div class="flex margin-bottom-10">
+		<div class="blue-circle">
+			<i class="fas fa-graduation-cap white-color icon"></i>
+		</div>
+		<div class="title primary-color uppercase vertical-center">
+			<%=education.title%>
+		</div>
+	</div>
+	
+	<div class="tableItem">
+		<% for(i=0; i<education.table.length; i++) { %>
+			<div class="subtitle bold margin-bottom-10 margin-left-5">
+				<%=education.table[i].startDate%>
+				-
+				<%=education.table[i].endDate%>
+				|
+				<span class="primary-color"><%=education.table[i].title%></span>
+			</div>
+			<div class="margin-left-60">
+				<%=education.table[i].description%>
+			</div>
+		<% } %>
+	</div>
+</div>

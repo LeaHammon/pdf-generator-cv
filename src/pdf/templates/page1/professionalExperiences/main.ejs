@@ -9,8 +9,8 @@
     </div>
 
     <% for(i=0; i<professionalExperiences.table.length && i<2; i++) {%>
-        <div class="experience">
-            <div class="bold margin-bottom-10" style="font-size: 18px; margin-left: 5px;">
+        <div class="tableItem">
+            <div class="subtitle bold margin-bottom-10 margin-left-5">
                 <%=professionalExperiences.table[i].startDate%>
                  -
                 <%=professionalExperiences.table[i].endDate%>
@@ -20,7 +20,7 @@
             <div class="margin-left-60">
                 <% for(j=0; j<professionalExperiences.table[i].missions.length; j++) { %>
                     <div class="margin-bottom-10">
-                        <ul style="margin: 0; padding: 0 0 0 17px;">
+                        <ul class="list">
                             <% for(k=0; k<professionalExperiences.table[i].missions[j].taskList.length; k++) { %>
                             <li>
                                 <%= professionalExperiences.table[i].missions[j].taskList[k] %>

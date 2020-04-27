@@ -44,6 +44,10 @@
 			margin-left: 60px;
 		}
 
+		.margin-left-5 {
+			margin-left: 5px;
+		}
+
 		.content {
 			padding: 25px;
 		}
@@ -84,9 +88,14 @@
 			justify-content: space-between;
 		}
 
-		.experience {
+		.tableItem {
 			margin-bottom: 20px;
 			line-height: 22px;
+		}
+
+		.list {
+			margin: 0;
+			padding: 0 0 0 17px;
 		}
 
 		.page {
@@ -119,6 +128,12 @@
 			<%- include('./common/footer.ejs') %>
 		</div>
 
+		<div class="page">
+			<%- include('./common/header.ejs') %>
+			<%- include('./page3/education/main.ejs', { education: education }) %>
+			<%- include('./page3/referees/main.ejs', { referees: referees }) %>
+			<%- include('./common/footer.ejs') %>
+		</div>
 	</div>
 
 </body>

@@ -183,5 +183,39 @@
                 ]
             }
         ]
+    },
+    "education": {
+        "title": "Education",
+        "table": [
+            {
+                "startDate": "2010",
+                "endDate": "2015",
+                "title": "Engineering degree at ESIEA",
+                "description": "With highest honour and congratulations from the Jury. ESIEA is a French engineering school which provides a five-year engineering degree as a Master of Computer Science"
+            }
+        ]
+    },
+    "referees": {
+        "title": "Referees",
+        "table": [
+            {
+                "name": "Remi Tache",
+                "jobTitle": "Director of Pixum Digital",
+                "contactType": "Email",
+                "contactLink": "remi.tache@pixiumdigital.com"
+            },
+            {
+                "name": "Julien Mulaton",
+                "jobTitle": "Manager of Front Team in Azqore",
+                "contactType": "LinkedIn",
+                "contactLink": "https://www.linkedin.com/in/julienmulaton/"
+            },
+            {
+                "name": "Ariane Rose",
+                "jobTitle": "Manager of the technical team in Agence du numérique at the French Ministry of Finance and Economy",
+                "contactType": "Email",
+                "contactLink": "ariane.rose@finances.gouv.fr"
+            }
+        ]
     }
 }
