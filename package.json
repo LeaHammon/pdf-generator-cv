@@ -1,0 +1,23 @@
+{
+	"name": "pdf-generator",
+	"version": "1.0.0",
+	"description": "example of a pdf generator",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js"
+	},
+	"author": "Lea Hammon",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"ejs": "^2.5.7",
+		"express": "^4.16.2",
+		"html-pdf": "^2.2.0",
+		"html-pdf-chrome": "^0.4.2",
+		"nodemon": "^2.0.2",
+		"pdf-puppeteer": "^1.1.10",
+		"phantomjs": "^2.1.7",
+		"phantomjs-prebuilt": "^2.1.16",
+		"puppeteer": "^2.1.1"
+	}
+}

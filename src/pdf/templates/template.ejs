@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- GLOBAL STYLE -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+
+	<style>
+		.nopadding {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		
+		.flex {
+			display: flex;
+		}
+
+		.primary-color {
+			color: #33cccc;
+		}
+
+		.white-color {
+			color: #EEEEEE;
+		}
+
+		.text-color {
+			color: #101010;
+		}
+
+		.grey-background {
+			background-color: #f2f2f2;
+		}
+
+		.margin-bottom-10 {
+			margin-bottom: 10px;
+		}
+
+		.margin-bottom-20 {
+			margin-bottom: 20px;
+		}
+	
+		.margin-left-60 {
+			margin-left: 60px;
+		}
+
+		.content {
+			padding: 25px;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.main-title {
+			font-size: 38px;
+		}
+
+		.title {
+			font-size: 26px;
+		}
+
+		.subtitle {
+			font-size: 18px;
+		}
+
+		.uppercase {
+			text-transform: uppercase;
+		}
+
+		.blue-circle {
+			background: #33cccc;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			margin-right: 10px;
+		}
+
+		.vertical-center {
+			margin: auto 0;
+		}
+
+		.space-between {
+			justify-content: space-between;
+		}
+
+		.experience {
+			margin-bottom: 20px;
+			line-height: 22px;
+		}
+
+		.page {
+			position: relative;
+			height: 14in;
+			display: block;
+			overflow: hidden;
+			font-family: "Ubuntu";
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	</style>
+</head>
+
+<body class="nopadding">
+
+	<div class="nopadding text-color" style="width: 100%">
+
+		<div class="page">
+			<%- include('./page1/presentation/main.ejs', { data: presentation }) %>
+			<%- include('./page1/contact/main.ejs', { data: contact }) %>
+			<%- include('./page1/skills/main.ejs', { technicalSkills: technicalSkills, languages: languages }) %>
+			<%- include('./page1/professionalExperiences/main.ejs', { professionalExperiences: professionalExperiences }) %>
+			<%- include('./common/footer.ejs') %>
+		</div>
+		
+		<div class="page">
+			<%- include('./common/header.ejs') %>
+			<%- include('./page2/professionalExperiences/main.ejs', { professionalExperiences: professionalExperiences }) %>
+			<%- include('./common/footer.ejs') %>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

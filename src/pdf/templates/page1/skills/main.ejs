@@ -1,0 +1,30 @@
+<div class="grey-background content">
+    <div class="flex margin-bottom-10">
+        <div class="blue-circle">
+            <i class="fas fa-cogs white-color icon"></i>
+        </div>
+        <div class="title primary-color uppercase vertical-center">
+            <%=technicalSkills.title%>
+        </div>
+    </div>
+    <% for(let i=0; i<technicalSkills.table.length; i++) {%>
+        <div class="margin-bottom-10 margin-left-60">
+            <div class="bold"><%= technicalSkills.table[i].category%>:</div>
+            <div><%= technicalSkills.table[i].list%></div>
+        </div>
+    <%}%>
+
+    <div class="flex margin-bottom-10">
+        <div class="blue-circle">
+            <i class="fas fa-comments white-color icon"></i>
+        </div>
+        <div class="title primary-color uppercase vertical-center">
+            <%=languages.title%>
+        </div>
+    </div>
+    <% for(let i=0; i<languages.table.length; i++) {%>
+        <div class="margin-bottom-10 margin-left-60">
+            <b><%= languages.table[i].language%>:</b> <%= languages.table[i].level%>
+        </div>
+    <%}%>
+</div>

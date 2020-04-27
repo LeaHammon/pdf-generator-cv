@@ -1,0 +1,29 @@
+<div class="content">
+    <% for(i=2; i<professionalExperiences.table.length; i++) {%>
+        <div class="experience">
+            <div class="bold margin-bottom-10" style="font-size: 18px; margin-left: 5px;">
+                <%=professionalExperiences.table[i].startDate%>
+                 -
+                <%=professionalExperiences.table[i].endDate%>
+                 |
+                <span class="primary-color"><%=professionalExperiences.table[i].jobTitle%></span>
+            </div>
+            <div class="margin-left-60">
+                <% for(j=0; j<professionalExperiences.table[i].missions.length; j++) { %>
+                    <div class="margin-bottom-10">
+                        <ul style="margin: 0; padding: 0 0 0 17px;">
+                            <% for(k=0; k<professionalExperiences.table[i].missions[j].taskList.length; k++) { %>
+                            <li>
+                                <%= professionalExperiences.table[i].missions[j].taskList[k] %>
+                            </li>
+                            <% } %>
+                        </ul>
+                        <div><b>Technical environment:</b> <%= professionalExperiences.table[i].missions[j].technicalEnvironment %></div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    <%}%>
+</div>
+
+

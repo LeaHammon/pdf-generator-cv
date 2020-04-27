@@ -1,0 +1,38 @@
+<div class="content">
+    <div class="flex margin-bottom-20">
+        <div class="blue-circle">
+            <i class="fas fa-briefcase white-color icon"></i>
+        </div>
+        <div class="title primary-color uppercase vertical-center">
+            Professional experiences
+        </div>
+    </div>
+
+    <% for(i=0; i<professionalExperiences.table.length && i<2; i++) {%>
+        <div class="experience">
+            <div class="bold margin-bottom-10" style="font-size: 18px; margin-left: 5px;">
+                <%=professionalExperiences.table[i].startDate%>
+                 -
+                <%=professionalExperiences.table[i].endDate%>
+                 |
+                <span class="primary-color"><%=professionalExperiences.table[i].jobTitle%></span>
+            </div>
+            <div class="margin-left-60">
+                <% for(j=0; j<professionalExperiences.table[i].missions.length; j++) { %>
+                    <div class="margin-bottom-10">
+                        <ul style="margin: 0; padding: 0 0 0 17px;">
+                            <% for(k=0; k<professionalExperiences.table[i].missions[j].taskList.length; k++) { %>
+                            <li>
+                                <%= professionalExperiences.table[i].missions[j].taskList[k] %>
+                            </li>
+                            <% } %>
+                        </ul>
+                        <div><b>Technical environment:</b> <%= professionalExperiences.table[i].missions[j].technicalEnvironment %></div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    <%}%>
+</div>
+
+
