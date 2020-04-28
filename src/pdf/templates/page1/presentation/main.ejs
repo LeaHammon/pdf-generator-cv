@@ -1,7 +1,8 @@
 <style>
 	.header-presentation {
-		width: 100%;
 		background: #33cccc;
+		border-radius: 5px;
+		margin: 10px;
 	}
 
 	.job {
@@ -10,22 +11,19 @@
 
 	.summary {
 		font-weight: bold;
-		padding-bottom: 10px 0;
 		font-style: italic;
 	}
 </style>
 
-<div class="header-presentation nopadding white-color">
-	<div class="content">
-		<div class="main-title bold">
-			<%= data.name %>
-		</div>
-		<div class="job title bold">
-			<%= data.job %>
-		</div>
-		<div class="summary subtitle">
-			<div><%= data.summary1 %></div>
-			<div><%= data.summary2 %></div>
-		</div>
+<div class="header-presentation white-color content page1">
+	<div class="main-title bold">
+		<%= data.name %>
+	</div>
+	<div class="job title bold">
+		<%= data.job %>
+	</div>
+	<div class="summary subtitle">
+		<div><%= data.summary1 %></div>
+		<div><%= data.summary2 %></div>
 	</div>
 </div>

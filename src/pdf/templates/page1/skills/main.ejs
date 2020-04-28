@@ -1,4 +1,10 @@
-<div class="grey-background content">
+<style>
+    .page1 .subtitle {
+        margin-right: 20px;
+    }
+</style>
+
+<div class="grey-background content page1">
     <div class="flex margin-bottom-10">
         <div class="blue-circle">
             <i class="fas fa-cogs white-color icon"></i>
@@ -8,7 +14,7 @@
         </div>
     </div>
     <% for(let i=0; i<technicalSkills.table.length; i++) {%>
-        <div class="margin-bottom-10 margin-left-60">
+        <div class="subtitle margin-bottom-10 margin-left-60">
             <div class="bold"><%= technicalSkills.table[i].category%>:</div>
             <div><%= technicalSkills.table[i].list%></div>
         </div>
@@ -23,7 +29,7 @@
         </div>
     </div>
     <% for(let i=0; i<languages.table.length; i++) {%>
-        <div class="margin-bottom-10 margin-left-60">
+        <div class="subtitle margin-bottom-10 margin-left-60">
             <b><%= languages.table[i].language%>:</b> <%= languages.table[i].level%>
         </div>
     <%}%>

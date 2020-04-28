@@ -1,14 +1,11 @@
-<div class="content page1">
-    <div class="flex margin-bottom-20">
-        <div class="blue-circle">
-            <i class="fas fa-briefcase white-color icon"></i>
-        </div>
-        <div class="title primary-color uppercase vertical-center">
-            Professional experiences
-        </div>
-    </div>
+<style>
+    .page3 .tableItem:nth-child(2) {
+        margin-bottom: 0px;
+    }
+</style>
 
-    <% for(i=0; i<professionalExperiences.table.length && i<1; i++) {%>
+<div class="page3">
+    <% for(i=4; i<professionalExperiences.table.length; i++) {%>
         <div class="tableItem">
             <div class="subtitle bold margin-bottom-10 margin-left-5">
                 <%=professionalExperiences.table[i].startDate%>

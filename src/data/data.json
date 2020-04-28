@@ -16,15 +16,15 @@
         "table": [
             {
                 "category": "Front-end",
-                "list": "Angular, Javascript, Typescript, Backbone, Karma, HTML5, CSS3/SASS, PostgreSQL"
+                "list": "Angular, Javascript, Typescript, Backbone, Karma, HTML5, CSS3/SASS"
             },
             {
                 "category": "Back-end",
-                "list": "Node.JS, Express, Java"
+                "list": "Node.JS, Express, Java, PostgreSQL"
             },
             {
                 "category": "Management",
-                "list": "JIRA, Trello, Agile methodologies, Scrum, Kanban, Visual management, Mangement 3.0"
+                "list": "JIRA, Trello, Agile methodologies, Scrum, Kanban, Visual management, Management 3.0"
             },
             {
                 "category": "OtherTools",
@@ -139,7 +139,7 @@
                         "taskList": [
                             "Realized an Android application to help technicians performs interventions in data centers. This application is a combination between tablet and glasses. The technician can manage his intervention from the tablet and then perform the intervention with the help of the glasses."
                         ],
-"                        technicalEnvironment": "Android, connected glasses"
+                        "technicalEnvironment": "Android, connected glasses"
                     },
                     {
                         "taskList": [
@@ -149,7 +149,7 @@
                     },
                     {
                         "taskList": [
-                            "Realized a hybrid application, using the framework Cordova. This mobile application allows a user to locate his position inside a building. This project uses Bluetooth technology (beacons)."
+                            "Realized a hybrid application, using the framework Cordova. This mobile application allows a user to locate his position inside a building. This project uses Bluetooth technology."
                         ],
                         "technicalEnvironment": "Cordova, Javascript, HTML5, CSS3, MVC, Bluetooth beacons"
                     },
@@ -170,13 +170,13 @@
             {
                 "startDate": "April 2014",
                 "endDate": "August 2014",
-                "jobTitle": "Intern at CKAB a start-up specialized in 3D-printing and connected object",
+                "jobTitle": "Intern at CKAB a start-up specialized in 3D-printing",
                 "missions": [
                     {
                         "taskList": [
-                            "Study of the Hall Effect in order to designed a prototype of distance sensor based on the Hall Effect.",
+                            "Designed a prototype of distance sensor based on the Hall Effect.",
                             "Mechanical and electronic improvement of the Makerbot 3D-printer.",
-                            "Redaction of tutorials to help the community to better use their 3D-printers."
+                            "Wrote tutorials to help the community to better use their 3D-printers."
                         ],
                         "technicalEnvironment": "Arduino"
                     }

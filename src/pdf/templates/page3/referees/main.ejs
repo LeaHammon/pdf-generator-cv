@@ -9,14 +9,17 @@
 	</div>
 	
     <% for(i=0; i<referees.table.length; i++) { %>
-	<div class="tableItem margin-left-5">
-			<div class="bold margin-bottom-10">
-                <span class="primary-color"><%=referees.table[i].name%></span>
-                <span><%=referees.table[i].jobTitle%></span>
-			</div>
-			<div>
-				<%=referees.table[i].contactType%>: <a><%=referees.table[i].contactLink%></a>
-			</div>
-        </div>
+		<div class="margin-bottom-10 margin-left-5">
+			<span class="bold primary-color"><%=referees.table[i].name%></span>
+			: 
+			<span><%=referees.table[i].jobTitle%></span>
+			</br>
+			<%=referees.table[i].contactType%>: 
+			<% if (referees.table[i].contactType === "Email") { %>
+				<a href=mailto:<%=referees.table[i].contactLink%>><%=referees.table[i].contactLink%></a>
+			<% } else { %>
+				<a href=<%=referees.table[i].contactLink%>><%=referees.table[i].contactLink%></a>
+			<% } %>				
+		</div>
     <% } %>
 </div>

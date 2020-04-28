@@ -52,6 +52,10 @@
 			padding: 25px;
 		}
 
+		.page3 {
+			padding: 20px 25px;
+		}
+
 		.bold {
 			font-weight: bold;
 		}
@@ -70,6 +74,11 @@
 
 		.uppercase {
 			text-transform: uppercase;
+		}
+
+		.icon {
+			padding: 12.5px;
+			font-size: 25px;
 		}
 
 		.blue-circle {
@@ -100,7 +109,7 @@
 
 		.page {
 			position: relative;
-			height: 14in;
+			height: 11.69in;
 			display: block;
 			overflow: hidden;
 			font-family: "Ubuntu";
@@ -130,6 +139,7 @@
 
 		<div class="page">
 			<%- include('./common/header.ejs') %>
+			<%- include('./page3/professionalExperiences/main.ejs', { professionalExperiences: professionalExperiences }) %>
 			<%- include('./page3/education/main.ejs', { education: education }) %>
 			<%- include('./page3/referees/main.ejs', { referees: referees }) %>
 			<%- include('./common/footer.ejs') %>

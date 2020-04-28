@@ -3,7 +3,7 @@ const ejs = require('ejs');
 
 const generatePDFromHTML = (html, callback) => {
     const options = {
-        format: "Legal",
+        format: "A4",
         printBackground: true
     };
 
